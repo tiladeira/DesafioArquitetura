@@ -18,6 +18,8 @@ namespace DesafioArquitetura.Infra.Data.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+
+            //modelBuilder.HasDefaultSchema("DesafioArquiteturaDB");
         }
     }
 }

@@ -12,7 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DesafioArquitetura.Domain\DesafioArquitetura.Domain.csproj" />
-    <ProjectReference Include="..\DesafioArquitetura.Infra.Data\DesafioArquitetura.csproj" />
+    <ProjectReference Include="..\DesafioArquitetura.Infra.Data\DesafioArquitetura.Infra.Data.csproj" />
   </ItemGroup>
 
 </Project>
