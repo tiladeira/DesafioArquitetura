@@ -1,5 +1,41 @@
 # DesafioArquitetura
 
+O projeto foi desenvolvido utilizando as seguintes tecnologias e padrões de projeto:
+
+* C#;
+* DDD;
+* Arquitetura Limpa;
+* Padrão Repository;
+* Injeção de Dependencia;
+* Inversão de Controle;
+* Entity Framework Core;
+* Unit Of Work;
+* DotNet Core 8;
+* AutoMapper;
+* Rest Api;
+* Docker;
+* SQL Server;
+
+Utilizado Docker para utilização da base de dados SQL Server, sendo que, o arquivo yaml.
+
+version: '3.8'
+services:
+  sql-server:
+    image: mcr.microsoft.com/mssql/server
+    container_name: sql-server-local
+    environment:
+      SA_PASSWORD: 123@teste
+      ACCEPT_EULA: Y
+    ports:
+      - "1433:1433"
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    driver: bridge
+
+
 Testando o projeto via Postman:
 
 {
